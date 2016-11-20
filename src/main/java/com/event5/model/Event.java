@@ -34,6 +34,7 @@ public class Event {
 	}
 	
 	public LocalDateTime getStartTime() {
+		// System.out.println(start_time.toString());
 		return start_time;
 	}
 	
@@ -61,12 +62,22 @@ public class Event {
 		this.place = place;
 	}
 	
-	public void setStartTime(LocalDateTime start_time) {
-		this.start_time = start_time;
+	public void setStartTime(String start_time) {
+		StringBuilder strBuilder = new StringBuilder();
+		strBuilder.append(start_time);
+		strBuilder.delete(19, 24);
+		strBuilder.append(".000");
+		
+		this.start_time = LocalDateTime.parse(strBuilder.toString());
 	}
 	
-	public void setEndTime(LocalDateTime end_time) {
-		this.end_time = end_time;
+	public void setEndTime(String end_time) {
+		StringBuilder strBuilder = new StringBuilder();
+		strBuilder.append(end_time);
+		strBuilder.delete(19, 24);
+		strBuilder.append(".000");
+		
+		this.end_time = LocalDateTime.parse(strBuilder.toString());
 	}
 	
 	@Override

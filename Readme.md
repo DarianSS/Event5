@@ -20,7 +20,7 @@
 	"data" : [
 		{
 			"description" : string,
-			"end_time" : string,
+			"endTime" : string,
 			"name" : string,
 			"place" : {
 				"name" : string,
@@ -34,7 +34,7 @@
 				},
 				"id" : string
 			},
-			"start_time" : string,
+			"startTime" : string,
 			"id" : string
 		},
 		...

@@ -22,7 +22,7 @@ public class Location {
 		return zip;
 	}
 	
-	public double getLatitute() {
+	public double getLatitude() {
 		return latitude;
 	}
 	
