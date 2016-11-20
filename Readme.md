@@ -2,7 +2,7 @@
 
 ### DOMAIN/request
 
-**Method**: `GET`
+**Method**: `POST`
 
 **Params**:
 

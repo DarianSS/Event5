@@ -1,6 +1,6 @@
 package com.event5.model;
 
-import java.time.LocalTime;
+import java.time.LocalDateTime;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -11,7 +11,7 @@ public class Event {
 	String id;
 	String street;
 	Place place;
-	LocalTime start_time, end_time;
+	LocalDateTime start_time, end_time;
 	
 	public String getDescription() {
 		return description;
@@ -33,11 +33,11 @@ public class Event {
 		return place;
 	}
 	
-	public LocalTime getStartTime() {
+	public LocalDateTime getStartTime() {
 		return start_time;
 	}
 	
-	public LocalTime getEndTime() {
+	public LocalDateTime getEndTime() {
 		return end_time;
 	}
 	
@@ -61,11 +61,11 @@ public class Event {
 		this.place = place;
 	}
 	
-	public void setStartTime(LocalTime start_time) {
+	public void setStartTime(LocalDateTime start_time) {
 		this.start_time = start_time;
 	}
 	
-	public void setEndTime(LocalTime end_time) {
+	public void setEndTime(LocalDateTime end_time) {
 		this.end_time = end_time;
 	}
 	

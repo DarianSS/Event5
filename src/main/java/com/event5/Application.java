@@ -1,4 +1,4 @@
-package com.event5.controller;
+package com.event5;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
