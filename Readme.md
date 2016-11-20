@@ -27,3 +27,32 @@ Send the DateTime in ISO-8601 compliant format:
 - end_time : `string`
 
 **Response**: `JSON`
+
+**Schema**
+
+```
+{
+	"data" : [
+		{
+			"description" : string,
+			"end_time" : string,
+			"name" : string,
+			"place" : {
+				"name" : string,
+				"location" : {
+					"city" : string,
+					"country" : string,
+					"latitude" : number,
+					"longitude" : number,
+					"street" : string,
+					"zip" : string,
+				},
+				"id" : string
+			},
+			"start_time" : string,
+			"id" : string
+		},
+		...
+	]
+}
+```
